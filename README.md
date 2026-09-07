@@ -102,7 +102,7 @@ rosbag play path/to/sample.bag
 
 ## Demo
 
-*(Add your RViz screenshot/GIF here — this is the single most convincing thing a recruiter will look at.)*
+
 
 ## Project Presentation
 
