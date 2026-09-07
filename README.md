@@ -26,19 +26,19 @@ This was built as part of a 4-stage V2X (Vehicle-to-Everything) group project: D
 ## Architecture
 
 ```
-  Test vehicle radar ──► /pdk/tracking topic ──┐
+    Test vehicle radar ──► /pdk/tracking topic ──┐
                                                  │
-  rosbag playback ───────────────────────────►  │
+   rosbag playback ───────────────────────────►  │
                                                  ▼
-                                         ┌─────────────────┐
-                                         │    pdk_ros       │
+                                         ┌───────────────────┐
+                                         │    pdk_ros        │
                                          │ (ROS node, Python)│──► filtered objects ──► RViz markers
                                          │ score > 0.9       │                           │
                                          │ distance < 50m    │                           ▼
-                                         └─────────────────┘                  ┌───────────────────┐
+                                         └───────────────────┘                  ┌────────────────────┐
                                                                                 │   ros_rviz_car     │
                                                                                 │ (ego vehicle model)│
-                                                                                └───────────────────┘
+                                                                                └────────────────────┘
 ```
 
 - **`pdk_ros/`** — Core processing package. Defines ~130 CPM-aligned ROS messages (`pdk_ros_msgs`) and a Python ROS node (`pdk_tracking_filter_and_visualization.py`) that subscribes to `/pdk/tracking`, applies the confidence/distance filter, classifies objects (car vs. pedestrian), and republishes RViz markers.
