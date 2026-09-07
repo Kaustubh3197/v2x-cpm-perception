@@ -97,6 +97,14 @@ roslaunch ros_rviz_car simple_display.launch
 # Play back a sample rosbag
 rosbag play path/to/sample.bag
 ```
+## Demo Video
+
+
+
+https://github.com/user-attachments/assets/d5cd92c6-826a-45a2-b75a-6fa97446247b
+
+
+
 
 ## Project Presentation
 
