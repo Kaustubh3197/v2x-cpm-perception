@@ -3,11 +3,7 @@
 A ROS-based pipeline that ingests radar perception data (via rosbag files or a live PDK topic), parses it as **ETSI ITS Collective Perception Messages (CPM)**, filters out false radar detections, and visualizes the cleaned results in RViz with distinct object markers.
 
 <!-- Add your RViz screenshot/GIF once you have it:
-<p align="center">
-  <img src="docs/rviz_demo.gif" alt="RViz visualization demo" width="700"/>
-  <br/>
-  <em>Filtered CPM detections visualized in RViz — cars and pedestrians shown with distinct markers</em>
-</p>
+<p align="center"> <img src="docs/rviz_visualization.png" alt="RViz visualization" width="700"/> <br/> <em>Left: unfiltered detections. Right: filtered output classified as cars (green) and pedestrians (red), with clean markers in RViz.</em> </p>
 -->
 
 ---
