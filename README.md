@@ -114,6 +114,3 @@ This work was completed as part of a university group project on Car2X communica
 
 `ROS Melodic` · `Python` · `RViz` · `ETSI ITS CPM` · `rosbag` · `Ubuntu` · `Perception Development Kit (PDK)`
 
-## License
-
-*(Add a license, e.g. MIT, if you want others to be able to use this freely.)*
